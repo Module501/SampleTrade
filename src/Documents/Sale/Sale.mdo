@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fce736c8-d7c2-46c2-93cf-107f3087bc6e">
+  <producedTypes>
+    <objectType typeId="0fc4ec81-6fc9-486c-b685-51b12aeee009" valueTypeId="934094d3-514a-4c37-b304-42459ea417fa"/>
+    <refType typeId="92bc5d90-4ebe-4668-9606-b9f37db81280" valueTypeId="35b2290b-d194-496a-bd0e-99005a5ba401"/>
+    <selectionType typeId="d80b21a9-ac96-403f-b97f-6774172965d9" valueTypeId="6fdb7c06-5f03-45ee-8b9c-1b2996d26b2b"/>
+    <listType typeId="d6b5240e-623d-4383-b6bb-ba4edb71cb3d" valueTypeId="394a5c7d-6836-4316-893e-c4d6798c11aa"/>
+    <managerType typeId="3aee0ba3-f267-4126-953d-fdabedb3dbd4" valueTypeId="8c740c40-e04a-4f29-ada7-f4e807d16568"/>
+  </producedTypes>
+  <name>Sale</name>
+  <synonym>
+    <key>en</key>
+    <value>Sale</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Sale.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Sale.Form.DocumentForm</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="804d510d-94ae-4ad6-a9c1-bfee8cbd6183">
+    <name>Good</name>
+    <synonym>
+      <key>en</key>
+      <value>Good</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Goods</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="776c3848-6fc5-41bf-a4d8-d3ef280a7038">
+    <name>Price</name>
+    <synonym>
+      <key>en</key>
+      <value>Price</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4aff4712-385a-48eb-8f29-87380f68f6b7">
+    <name>Amount</name>
+    <synonym>
+      <key>en</key>
+      <value>Amount</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="39340526-cb95-4ae1-94ba-d39da7246d47">
+    <name>Summ</name>
+    <synonym>
+      <key>en</key>
+      <value>Summ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b014fff9-4cbb-4b01-9234-76cd5d79c932">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
