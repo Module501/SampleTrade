@@ -161,6 +161,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Object.Price</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>PriceOnChange</name>
+    </handlers>
     <extendedTooltip>
       <name>PriceExtendedTooltip</name>
       <id>12</id>
@@ -211,6 +215,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Object.Amount</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>AmountOnChange</name>
+    </handlers>
     <extendedTooltip>
       <name>AmountExtendedTooltip</name>
       <id>15</id>
